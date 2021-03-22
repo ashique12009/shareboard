@@ -2,10 +2,9 @@
 /**
  * User model
  */
-class UserModel
-{
-  public function Index()
-  {
+class UserModel {
+
+  public function Index() {
     return;
   }
 }

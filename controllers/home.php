@@ -2,10 +2,9 @@
 /**
  * Home controller
  */
-class Home extends Controller
-{
-  protected function index()
-  {
+class Home extends Controller {
+  
+  protected function index() {
     $viewmodel = new HomeModel();
     $this->ReturnView($viewmodel->Index(), true);
   }

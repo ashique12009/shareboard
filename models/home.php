@@ -2,10 +2,9 @@
 /**
  * Home model
  */
-class HomeModel extends Model 
-{
-  public function Index()
-  {
+class HomeModel extends Model {
+  
+  public function Index() {
     return;
   }
 }
