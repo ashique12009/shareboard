@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 05, 2021 at 12:26 PM
+-- Generation Time: Mar 23, 2021 at 07:24 AM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.8
 
@@ -32,9 +32,16 @@ CREATE TABLE `shares` (
   `user_id` int(11) NOT NULL,
   `title` varchar(128) NOT NULL,
   `body` text NOT NULL,
-  `link` int(11) NOT NULL,
+  `link` varchar(128) NOT NULL,
   `create_date` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `shares`
+--
+
+INSERT INTO `shares` (`id`, `user_id`, `title`, `body`, `link`, `create_date`) VALUES
+(1, 1, 'Title goes here', 'Body goes here', 'http://www.google.com', '2021-03-23 10:34:04');
 
 -- --------------------------------------------------------
 
@@ -74,7 +81,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `shares`
 --
 ALTER TABLE `shares`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `users`
