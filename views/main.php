@@ -25,7 +25,7 @@
         <ul class="navbar-nav my-2 my-md-0">
         <?php if (isset($_SESSION['is_logged_in']) && $_SESSION['is_logged_in']) : ?>
           <li class="nav-item">
-            <a class="nav-link" href="<?php echo ROOT_URL;?>users/login">Welcome <?php echo $_SESSION['user_data']['name'];?></a>
+            <a class="nav-link" href="<?php echo ROOT_URL;?>shares">Welcome <?php echo $_SESSION['user_data']['name'];?></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="<?php echo ROOT_URL;?>users/logout">Logout</a>
