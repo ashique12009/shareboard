@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Main</title>
+    <title>Shareboard</title>
     <link rel="stylesheet" href="<?php echo ROOT_URL;?>assets/css/bootstrap.css">
     <link rel="stylesheet" href="<?php echo ROOT_URL;?>assets/css/style.css">
   </head>
@@ -27,7 +27,7 @@
             <a class="nav-link" href="<?php echo ROOT_URL;?>">Login</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<?php echo ROOT_URL;?>shares">Register</a>
+            <a class="nav-link" href="<?php echo ROOT_URL;?>users/register">Register</a>
           </li>
         </ul>
         <form class="form-inline my-2 my-md-0">

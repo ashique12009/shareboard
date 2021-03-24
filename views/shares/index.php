@@ -1,5 +1,5 @@
 <div class="w-100">
-  <a href="<?php echo ROOT_PATH;?>shares/add" class="btn btn-success">Share something</a>
+  <a href="<?php echo ROOT_URL;?>shares/add" class="btn btn-success">Share something</a>
   <?php foreach ($viewmodel as $item) : ?>
     <div class="card card-body bg-light mt-4 w-100">
       <h3><?php echo $item['title'];?></h3>
