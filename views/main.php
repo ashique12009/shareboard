@@ -23,12 +23,21 @@
           </li>
         </ul>
         <ul class="navbar-nav my-2 my-md-0">
+        <?php if (isset($_SESSION['is_logged_in']) && $_SESSION['is_logged_in']) : ?>
           <li class="nav-item">
-            <a class="nav-link" href="<?php echo ROOT_URL;?>">Login</a>
+            <a class="nav-link" href="<?php echo ROOT_URL;?>users/login">Welcome <?php echo $_SESSION['user_data']['name'];?></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="<?php echo ROOT_URL;?>users/logout">Logout</a>
+          </li>
+        <?php else : ?>
+          <li class="nav-item">
+            <a class="nav-link" href="<?php echo ROOT_URL;?>users/login">Login</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="<?php echo ROOT_URL;?>users/register">Register</a>
           </li>
+        <?php endif; ?>
         </ul>
         <form class="form-inline my-2 my-md-0">
           <input class="form-control" type="text" placeholder="Search">
